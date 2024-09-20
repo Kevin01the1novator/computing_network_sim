@@ -68,7 +68,7 @@ When the script runs, it will:
 
 ## Customization
 You can modify the following:
-- **Network Topology**: Adjust the `adjMatrix` in `mainOSPF.m` to simulate different network topologies.
+- **Network Topology**: Adjust the `adjMatrix` in `main.m` to simulate different network topologies.
 - **Traffic Conditions**: Adjust `trafficLoad` and `topoChangeRate` in the `adjustTimers.m` function to simulate various network conditions.
 - **Machine Learning**: Modify the neural network architecture or training data for predictive OSPF timer optimization.
 
