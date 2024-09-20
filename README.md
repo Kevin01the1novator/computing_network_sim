@@ -21,7 +21,7 @@ This project implements a MATLAB simulation to study and optimize the performanc
 ## Project Structure
 The project consists of the following MATLAB files:
 
-- `mainOSPF.m`: The main script that orchestrates the entire simulation, calling various functions to simulate network behavior, perform computations, and visualize results.
+- `main.m`: The main script that orchestrates the entire simulation, calling various functions to simulate network behavior, perform computations, and visualize results.
 - `dijkstra.m`: Function to compute the shortest path between nodes using the Dijkstra algorithm.
 - `adjustTimers.m`: Function that adjusts the OSPF Hello, Dead, and SPF Holdtime timers based on real-time traffic conditions and topology change rate.
 - `recomputePartial.m`: Function that handles partial forwarding table re-computation for only the affected nodes.
@@ -45,8 +45,8 @@ The project consists of the following MATLAB files:
    - Navigate to the directory containing the project files.
 
 3. **Run the Simulation**:
-   - Open the `mainOSPF.m` script and run it. This script will execute all the necessary computations and visualizations for the simulation.
-   - You can modify the adjacency matrix in `mainOSPF.m` to simulate different network topologies.
+   - Open the `main.m` script and run it. This script will execute all the necessary computations and visualizations for the simulation.
+   - You can modify the adjacency matrix in `main.m` to simulate different network topologies.
 
 ### Example Run
 When the script runs, it will:
