@@ -87,5 +87,5 @@ This project is open-source and free to use. Feel free to modify, distribute, or
 ---
 
 ## Contact
-For questions, improvements, or suggestions, feel free to contact the project developer.
+khoile0251@gmail.com
 
