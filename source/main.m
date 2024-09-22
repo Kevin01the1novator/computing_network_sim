@@ -74,5 +74,24 @@ disp(metrics.convergenceTime);
 disp('Routing Overhead:');
 disp(metrics.routingOverhead);
 
+% Step 12: Collect and analyze performance metrics
+% Call collect_and_analyze_data and capture outputs
+[convergenceTimesQoS, convergenceTimesDijkstra, convergenceTimesRecompute, ...
+ routingOverheadsQoS, routingOverheadsDijkstra, routingOverheadsRecompute, ...
+ convergenceTimesSDN, routingOverheadsSDN] = collect_and_analyze_data(adjMatrix, trafficLoad, topoChangeRate);
+
+
+disp('Calling analyze_performance...');
+
+% Collect and analyze performance metrics
+collect_and_analyze_data(adjMatrix, trafficLoad, topoChangeRate);
+
+
+% Call statistical analysis after collecting data
+statistical_analysis(convergenceTimesQoS, convergenceTimesDijkstra, ...
+                     convergenceTimesRecompute, routingOverheadsQoS, ...
+                     routingOverheadsDijkstra, routingOverheadsRecompute, ...
+                     convergenceTimesSDN, routingOverheadsSDN);
+
 % Call visualizeOSPFPerformance to evaluate and visualize the performance
 visualizeOSPFPerformance;
